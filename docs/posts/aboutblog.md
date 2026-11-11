@@ -38,7 +38,7 @@ npm run dev
 ## 更新博客（写文章 / 修改页面）
 - 新增文章：在 `docs/posts/` 新建 `xxx.md`
 - 修改配置：`docs/.vitepress/config.js`
-- 修改首页：`docs/index.md`
+- 修改首页：`docs/index.md` 
 写完继续本地预览，确认排版、链接都正常。 
 ## 提交并推送到 GitHub
 ```bash
@@ -68,7 +68,16 @@ git add .
 git commit -m "更新内容"
 git push origin main
 ```
-## 后续 
-文章的图片、附件统一管理，建议放在仓库内 `docs/public/` 目录，这样换电脑克隆后图片也不会丢失。
+## 注意事项  
+0. 文章的图片、附件统一管理，建议放在仓库内 `docs/public/` 目录，这样换电脑克隆后图片也不会丢失。 
+1. **不要上传 node_modules**
+仓库里已经有 `.gitignore`，里面写了 `node_modules/`，正常情况下不会提交。
+2. 提示权限拒绝：
+   - HTTPS 方式：token 过期了，重新生成 PAT 
+   - SSH 方式：检查公钥有没有加到 GitHub，或者本地 ssh-agent 没加载密钥 
+3. 拉下来本地运行报错： 
+   - node 版本差异导致依赖异常：删除 `package-lock.json` + `node_modules`，再 `npm install`
+4. 多设备轮流写博客：**每次写之前先 git pull**，避免冲突！
+5. 仓库里的 `.github/workflows/deploy.yml` 会跟着仓库一起拉下来，不用重新配置 Actions
 
 
