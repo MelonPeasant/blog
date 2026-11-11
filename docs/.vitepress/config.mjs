@@ -6,7 +6,12 @@ export default defineConfig({
   title: "我的博客",
   description: "VitePress 博客",
   appearance: true, // true=跟随系统、可切换；'dark' 默认暗黑；false 关闭暗黑切换
+  head: [
+    // favicon 配置
+    ['link', { rel: 'icon', href: '/blog/favicon.ico' }]
+  ],
   themeConfig: {
+    // logo: '/blog/logo.png', // 导航栏logo
     nav: [
       { text: '首页', link: '/' },
       { text: '文章', link: '/posts/hello' },

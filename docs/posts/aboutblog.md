@@ -38,8 +38,8 @@ npm run dev
 ## 更新博客（写文章 / 修改页面）
 - 新增文章：在 `docs/posts/` 新建 `xxx.md`
 - 修改配置：`docs/.vitepress/config.js`
-- 修改首页：`docs/index.md` 
-写完继续本地预览，确认排版、链接都正常。 
+- 修改首页：`docs/index.md`     
+- 写完继续本地预览，确认排版、链接都正常。 
 ## 提交并推送到 GitHub
 ```bash
 # 查看改动了哪些文件
