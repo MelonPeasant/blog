@@ -14,7 +14,8 @@ export default defineConfig({
       {
         text: '文章列表',
         items: [
-          { text: '第一篇文章', link: '/posts/hello' }
+          { text: '第一篇文章', link: '/posts/hello' },
+          { text: '第二篇文章', link: '/posts/firstpost' }
         ]
       }
     ],
