@@ -9,7 +9,8 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
-      { text: '文章', link: '/posts/hello' }
+      { text: '文章', link: '/posts/hello' },
+      { text: '关于博客', link: '/posts/aboutblog' }
     ],
     sidebar: [
       {
